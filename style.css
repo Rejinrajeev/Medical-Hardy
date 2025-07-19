@@ -14,6 +14,8 @@
   padding: 0;
   box-sizing: border-box;
   transition: all 0.5s ease;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 img {
   max-width: 100%;
@@ -29,14 +31,6 @@ button {
   background-color: rgb(239, 248, 237);
   width: 100%;
   height: 770px;
-}
-
-.nav {
-  display: none;
-}
-
-#hangburger_button {
-  display: none;
 }
 
 .Container {
@@ -58,18 +52,16 @@ button {
 }
 
 #logo_name {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   letter-spacing: 0.1px;
   color: var(--text-color);
 }
 
 .nav_bar {
   display: flex;
-  gap: 250px;
+  gap: 14vw;
 }
 
 .nav_list {
@@ -81,8 +73,6 @@ button {
 
 .nav_ls_item {
   text-decoration: none;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -98,8 +88,6 @@ button {
 }
 
 #nav_logins_item_1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -118,8 +106,6 @@ button {
   gap: 15px;
   border-radius: 5px;
   background-color: var(--primary-color);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 22px;
@@ -129,36 +115,34 @@ button {
 }
 
 #online {
-  font-family: Montserrat;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.1px;
   color: rgba(150, 187, 124, 1);
 }
 
 #high {
-  font-family: Montserrat;
   font-weight: 700;
-  font-size: 47px;
+  font-size: 3rem;
   line-height: 65px;
   letter-spacing: 0.2px;
   color: var(--text-color);
+  max-width: 542px;
 }
 
 #every_day {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 20px;
+  color: var(--second-text-color);
   line-height: 30px;
   letter-spacing: 0.2px;
-  color: var(--second-text-color);
 }
 
 #hero_button_1 {
-  font-family: Montserrat;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 22px;
   letter-spacing: 0.2px;
   text-align: center;
@@ -171,9 +155,8 @@ button {
 }
 
 #hero_button_2 {
-  font-family: Montserrat;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 22px;
   letter-spacing: 0.2px;
   text-align: center;
@@ -181,7 +164,7 @@ button {
   background-color: transparent;
   border-color: rgba(150, 187, 124, 1);
   border-radius: 5px;
-  width: 162px;
+  width: 193px;
   height: 52px;
 }
 
@@ -197,24 +180,29 @@ button {
 }
 
 .hero_left {
-  padding-top: 200px;
+  padding-top: 12rem;
 }
 
 .hero_image_1 {
   width: 661px;
 }
-
+/* *********************************************************************************************************** */
 /* second page */
 
 .Section_main {
-  height: 782px;
+  min-height: 782px;
 }
-
+#top_part_text_2 {
+  max-width: 437px;
+}
+#top_part_text_3 {
+  max-width: 469px;
+}
 .green_small_heading {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.2px;
   color: var(--primary-text-color);
 }
@@ -222,8 +210,8 @@ button {
 .blue_big_heading {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
   letter-spacing: 0.2px;
   color: var(--text-color);
 }
@@ -231,8 +219,8 @@ button {
 .gray_parahraph {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   letter-spacing: 0.2px;
   color: var(--second-text-color);
 }
@@ -240,22 +228,28 @@ button {
 .section_main_contents {
   display: grid;
   gap: 112px;
-  padding: 112px;
-  justify-content: center;
+  padding-top: 10rem;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .banner_part {
   display: flex;
-  gap: 35px;
-  /* padding: 100px; */
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  gap: 1rem;
+  /* justify-items: center; */
+  place-content: center;
 }
 
 .card {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
   /* Adds a soft shadow */
-  padding: 20px;
+  padding: 35px 40px 35px 40px;
   background-color: white;
+  width: 240px;
+  gap: 20px;
+  display: grid;
 }
 
 .card:hover {
@@ -274,7 +268,7 @@ button {
 .card_heading {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.1px;
   color: var(--text-color);
@@ -289,12 +283,12 @@ button {
 .card_para {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 20px;
   letter-spacing: 0.2px;
   color: var(--second-text-color);
 }
-
+/* *********************************************************************************************** */
 /* page 3 */
 .section_3 {
   height: 715px;
@@ -302,13 +296,17 @@ button {
 
 .sec_3 {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  /* padding: 115px; */
   gap: 34px;
+  padding-top: 10rem;
+  /* padding-bottom: 10rem; */
 }
-#section_three_blue_heading{
-  width: 238px;
+#section_three_blue_heading {
+  max-width: 238px;
+}
+.para_3 {
+  max-width: 351px;
 }
 
 .red_line {
@@ -318,17 +316,16 @@ button {
 }
 
 .r_content {
-  /* background-color: chartreuse; */
   display: grid;
-  gap: 10px;
+  gap: 35px;
 }
-
+/* ******************************************************************************************************** */
 /* page 4 csss */
 
 .approdable_packages_content {
   display: flex;
   gap: 30px;
-  margin-top: 10px;
+  padding-top: 10rem;
 }
 
 .approdable_packages_image {
@@ -339,23 +336,40 @@ button {
   display: grid;
   gap: 35px;
 }
-
+.approdable_packages_paragraph {
+  max-width: 390px;
+}
 .section_approdable_packages {
   height: 676px;
 }
-
+.paly_icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  background-color: var(--primary-color);
+  border: none;
+  position: absolute;
+  top: 136px;
+  left: 210px;
+}
+.approdable_packages_right {
+  position: relative;
+}
+/* ********************************************************************************************************************************************* */
 /* add banner card css */
 
 .add_card {
   display: grid;
   gap: 5px;
 }
+.most_popular_courses_paragraph {
+  max-width: 460px;
+}
 
 .sale {
-  font-family: Montserrat;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.2px;
   text-align: center;
   color: var(--light-text-color);
@@ -421,7 +435,7 @@ button {
   position: relative;
 }
 .section_most_popular_courses {
-  height: 1088px;
+  height: 940px;
 }
 
 /* card bottoommm */
@@ -503,19 +517,19 @@ button {
 
 .adds {
   display: flex;
-  /* justify-content: space-between; */
-  gap: 30px;
+  gap: 1rem;
 }
 
 .most_popular_courses_content {
   display: grid;
   gap: 80px;
+  padding-top: 10rem;
 }
-
+/* **************************************************************************************************************************** */
 /* page 6 css */
 
 .section_our_experts_teacher {
-  height: 1440px;
+  height: 1240px;
 }
 
 .our_experts_teacher_top_part {
@@ -526,11 +540,15 @@ button {
 .our_experts_teacher_contents {
   display: grid;
   gap: 80px;
+  padding-top: 10rem;
 }
-
+.our_experts_teacher_paragraph {
+  max-width: 460px;
+}
 .our_experts_teacher_bottom_part {
   display: flex;
-  gap: 30px;
+  gap: 10px;
+  justify-content: center;
 }
 #our_experts_teacher_card_for_new {
   position: relative;
@@ -555,7 +573,7 @@ button {
   background-color: rgba(231, 124, 64, 1);
   position: absolute;
   top: -11px;
-  left: 261px;
+  left: 210px;
 }
 .our_experts_teacher_card {
   display: grid;
@@ -681,7 +699,7 @@ button {
   border: none;
 }
 
-.our_experts_teacher_card_list_text {
+.our_experts_teacher_card_list_heading {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 14px;
@@ -690,7 +708,7 @@ button {
   letter-spacing: 0.2px;
 }
 
-.our_experts_teacher_card:hover .our_experts_teacher_card_list_text {
+.our_experts_teacher_card:hover .our_experts_teacher_card_list_heading {
   color: white;
 }
 .our_experts_teacher_card_list_part {
@@ -703,7 +721,7 @@ button {
   align-items: center;
 }
 /* end of page 6 */
-/* ********************** */
+/* *************************************************************************************************************************************** */
 
 /* css of page 7 */
 .section_testimonials {
@@ -713,16 +731,21 @@ button {
 .testimonialscontents {
   display: grid;
   gap: 10px;
+  padding-top: 10rem;
 }
 .testimonials_top_part {
   display: grid;
   gap: 20px;
 }
 
+.testimonial_paragraph {
+  max-width: 450px;
+}
 .testimonials_banner {
   display: flex;
   justify-content: center;
-  padding: 100px;
+  place-items: center;
+  padding-top: 5rem;
   gap: 50px;
 }
 
@@ -740,7 +763,7 @@ button {
   color: var(--second-text-color);
   line-height: 20px;
   letter-spacing: 0.2px;
-width: 350px;
+  max-width: 350px;
 }
 
 .testimonials_card_name {
@@ -777,7 +800,7 @@ width: 350px;
 }
 
 /* end of 7 */
-
+/* ********************************************************************************************************************************* */
 /* css to eigth */
 .section_newsletter {
   background-color: rgba(255, 242, 243, 1);
@@ -787,7 +810,7 @@ width: 350px;
 .newsletter_contents {
   display: grid;
   gap: 80px;
-  padding-top: 160px;
+  padding-top: 10rem;
 }
 .newsletter_top_part {
   justify-content: center;
@@ -809,9 +832,6 @@ width: 350px;
   width: 117px;
   height: 58px;
 }
-.newsletter_bottom_part{
-  justify-content: center;
-}
 .searchbar {
   border-radius: 5px;
   width: 100%;
@@ -824,12 +844,24 @@ width: 350px;
   line-height: 28px;
   letter-spacing: 0.2px;
 }
-
+.search_bar {
+  max-width: 100%;
+}
+.newsletter_small_heading {
+  text-align: center;
+}
+.newsletter_heading {
+  text-align: center;
+}
+.newsletter_paragrapg {
+  text-align: center;
+  max-width: 509px;
+}
 .formm_items {
   display: flex;
-  justify-content: center;
+  place-items: center;
 }
-
+/* ************************************************************************************************************************************ */
 /* footer css */
 
 .section_footer {
@@ -837,8 +869,7 @@ width: 350px;
 }
 
 .footer_contents {
-  /* padding-bottom: 50px; */
-  padding-top: 50px;
+  padding-top: 5rem;
   display: grid;
   gap: 60px;
 }
@@ -852,18 +883,18 @@ width: 350px;
 .footer-heading {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-color);
-  line-height: 24px;
+  line-height: 1rem;
   letter-spacing: 0.1px;
 }
 
 .footer_list_text {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: var(--second-text-color);
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: 0.2px;
 }
 
@@ -888,248 +919,128 @@ width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  /* padding-bottom: 25px; */
+  padding-top: 1.5rem
 }
 
 .madewith_text {
   font-family: Montserrat;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: var(--second-text-color);
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: 0.2px;
 }
-
 .footer_icons {
   display: flex;
   gap: 20px;
 }
-@media (max-width: 1050px) {
-  body,
-  html {
-    margin: 0;
-    padding: 0;
+@media (min-width: 1706.6px) {
+  .Container {
+    max-width: 1200px;
   }
-  .nav_bar {
-    gap: 218px;
+}
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+  .Container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 20px;
+  }
+  .Container {
+    max-width: 1400px;
   }
 }
 @media (max-width: 1025px) {
-  body,
-  html {
-    margin: 0;
-    padding: 0;
+  .adds {
+    place-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  .nav_bar {
-    gap: 220px;
+  .section_most_popular_courses {
+    height: auto;
   }
-
   .our_experts_teacher_bottom_part {
-    gap: 15px;
+    display: grid;
+    place-items: center;
   }
+  .section_our_experts_teacher {
+    height: auto;
+  }
+  .footer_top{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+place-items: center;
+  }
+  .footer-column-contact {
+  grid-column: span 2; /* Makes it stretch across two columns */
+  text-align: center;
+}
 }
 
-/* Responsive for mobile */
-@media (max-width: 965px) {
+@media (max-width: 961px) {
+  .nav_bar {
+    display: none;
+  }
   .hero_right {
     display: none;
+  }
+  .hero {
+    justify-content: center;
   }
   .sec_3_left {
     display: none;
   }
-
+  .section_3 {
+    height: auto;
+  }
   .approdable_packages_right {
     display: none;
   }
-
-  .banner_part {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .adds {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .our_experts_teacher_card {
-    width: 300px;
-  }
-
-  .menu {
-    display: grid;
-    background: #333;
-    color: white;
-    /* padding: 15px; */
-  }
-
-  .menu input {
-    display: none;
-  }
-
-  .menu label {
-    font-size: 26px;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: #444;
-    padding: 10px;
-    position: absolute;
-    top: 100%;
-  }
-
-  .nav a {
-    color: white;
-    text-decoration: none;
-    padding: 8px;
-  }
-
-  /* Toggle icon based on checked state */
-  #toggle + label::before {
-    content: "☰";
-  }
-
-  #toggle:checked + label::before {
-    content: "✖";
-  }
-
-  #toggle:checked ~ .nav {
-    display: inline-flex;
-    align-items: center;
-  }
-  #hangburger_button {
-    display: flex;
-  }
-  .nav_bar {
-    display: none;
-  }
-
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero_left {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .section-bg{
-    height: auto;
-  }
-  .Section_main{
-    height: auto;
-  }
-  .section_3{
-    height: auto;
-  }
-  .sec_3{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    justify-content: center;
-  }
-  .section_approdable_packages{
+  .section_approdable_packages {
     height: auto;
   }
   #section_three_blue_heading{
-    width: auto;
+    max-width: 465px;
   }
-  .approdable_packages_content{
-    justify-content: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
+
+}
+@media (max-width: 720px) {
+  .testimonials_banner {
+    display: grid;
+    place-items: center;
   }
-  .section_most_popular_courses{
+  .section_testimonials {
     height: auto;
   }
-  .most_popular_courses_content{
-    justify-content: center;
-  }
-  .section_our_experts_teacher{
+  .section_testimonials {
     height: auto;
   }
-  .our_experts_teacher_contents{
-    justify-content: center;
+}
+@media (max-width: 560px) {
+  .adds {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .our_experts_teacher_bottom_part{
+  .our_experts_teacher_card_for_new_icon {
+    display: none;
+  }
+}
+@media (max-width: 421px) {
+  #hero_left_buttons {
     display: grid;
     justify-content: center;
   }
-  .section_testimonials{
-    height: auto;
-  }
-  .testimonialscontents{
-    justify-content: center;
-    
-  }
-  .testimonials_top_part{
-    justify-content: center;
-  }
-  .section_newsletter{
-    height: auto;
-  }
-  .section_footer{
-    height: auto;
-  }
-  .searchbar{
-    width: 460px;
-  }
-  .most_popular_courses_content{
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 20px;
-  }
-  .our_experts_teacher_contents{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .testimonialscontents{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-.footer_list_text {
-font-size: 10px;
-}
-.madewith_text {
-  font-size: 10px;
-}
-.newsletter_contents{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-}
 
-
-@media (max-width:721px){
-  .testimonials_banner{
-    display: grid;
-  }
-  .searchbar{
-    width: 400px;
-  }
- .newsletter_contents{
-  padding: 10px;
- }
- .footer-heading{
-  font-size: 13px;
- }
- .footer_top{
-  display: grid;
-  grid-template-columns: repeat( auto-fit,minmax(200px,1fr));
-  justify-content: center;
- }
+.our_experts_teacher_card {
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-
-
-@media(max-width:561px){
-  .section_main_contents{
-padding: 50px 10px 50px 10px 
-}
-.most_popular_courses_content{
-  padding-left: 5px;
-  padding-right: 5px;
+.footer_list_text{
+  font-size: 0.6rem;
 }
 }
