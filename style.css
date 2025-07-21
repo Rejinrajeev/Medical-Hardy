@@ -573,7 +573,7 @@ button {
   background-color: rgba(231, 124, 64, 1);
   position: absolute;
   top: -11px;
-  left: 210px;
+  left: 258px;
 }
 .our_experts_teacher_card {
   display: grid;
@@ -919,7 +919,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.5rem
+  padding-top: 1.5rem;
 }
 
 .madewith_text {
@@ -933,6 +933,17 @@ button {
 .footer_icons {
   display: flex;
   gap: 20px;
+}
+/* Default desktop: hide menu icon */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
 }
 @media (min-width: 1706.6px) {
   .Container {
@@ -972,15 +983,15 @@ button {
   .section_our_experts_teacher {
     height: auto;
   }
-  .footer_top{
+  .footer_top {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
   }
   .footer-column-contact {
-  grid-column: span 2; /* Makes it stretch across two columns */
-  text-align: center;
-}
+    grid-column: span 2; /* Makes it stretch across two columns */
+    text-align: center;
+  }
 }
 
 @media (max-width: 961px) {
@@ -1005,9 +1016,77 @@ place-items: center;
   .section_approdable_packages {
     height: auto;
   }
-  #section_three_blue_heading{
+  #section_three_blue_heading {
     max-width: 465px;
   }
+   .header {
+        position: relative;
+        padding: 10px 20px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hide menu initially */
+    .nav_bar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff; /* Change if needed */
+        /* width: 100%; */
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 998;
+    }
+
+    /* Show menu when toggled */
+    #menu-toggle:checked ~ .nav_bar {
+        display: flex;
+        gap: 2px;
+    }
+
+    /* Stack nav items */
+    .nav_list {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .nav_list_item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_ls_item {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+#nav_logins_item_1{
+  text-align: center;
+}
+    /* Stack login buttons */
+    .nav_bar_logins {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 15px;
+        padding-left: 0;
+    }
+
+    .nav_bar_logins .btn1,
+    .nav_bar_logins .btn2 {
+        width: 100%;
+    }
+
+    .nav_bar_logins button {
+        width: 100%;
+    }
 
 }
 @media (max-width: 720px) {
@@ -1036,11 +1115,11 @@ place-items: center;
     justify-content: center;
   }
 
-.our_experts_teacher_card {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.footer_list_text{
-  font-size: 0.6rem;
-}
+  .our_experts_teacher_card {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer_list_text {
+    font-size: 0.6rem;
+  }
 }
